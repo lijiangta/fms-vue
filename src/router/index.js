@@ -6,6 +6,10 @@ import FileCenterView from '@/views/FileCenterView'
 import PersonView from '@/views/PersonView'
 import FileCenterEditView from '@/views/FileCenterEditView'
 import FileCenterShowView from '@/views/FileCenterShowView'
+import IndexView from '@/views/IndexView'
+import Layout from "@//components/common/Layout";
+import Bootstrap from "@/components/common/Bootstrap";
+import Simple from "@/components/common/Simple";
 
 Vue.use(Router);
 
@@ -19,8 +23,8 @@ export default new Router({
       },
       {
         path: '/index',
-        name: 'HelloWorld',
-        component: HelloWorld,
+        name: 'IndexView',
+        component: IndexView,
         meta: {
           requireAuth: true
         },
@@ -48,6 +52,21 @@ export default new Router({
             component: PersonView,
           }
         ]
+      },
+      {
+        path: "/layout",
+        name: "Layout",
+        component: Layout
+      },
+      {
+        path: "/bootstrap",
+        name: "Bootstrap",
+        component: Bootstrap
+      },
+      {
+        path: "/simple",
+        name: "Simple",
+        component: Simple
       }
     ]
 })

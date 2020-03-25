@@ -7,8 +7,8 @@
 </template>
 
 <script>
-    import NavMenu from "@components/common/NavMenu";
-    import SearchBar from "@components/common/SearchBar";
+    import NavMenu from "@/components/common/NavMenu";
+    import SearchBar from "@/components/common/SearchBar";
     export default {
         name: 'HelloWorld',
         components:{SearchBar, NavMenu},
